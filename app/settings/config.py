@@ -4,7 +4,7 @@ bddPath = os.path.abspath('app.db')
 
 class Ajustes(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'flask-course'
-    SQLALCHEMY_DATABASE_URI = 'postgres://qejzqjpgmauvxj:052b26bf64cb13fa0e2b1af40823d8e94f24d1df696f3cb6ef461bcd09f9c527@ec2-18-213-176-229.compute-1.amazonaws.com:5432/dd679vcg6hrutv'
+    SQLALCHEMY_DATABASE_URI = 'postgres://bufpwdjtpzcoel:bfcb328fe616c6ad1d0db4c602e78f580ba6cd4acabbea2211e5889f9f0e17b7@ec2-34-206-252-187.compute-1.amazonaws.com:5432/ddhekhobkm46k5'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     POSTS_PER_PAGE = 3
 
