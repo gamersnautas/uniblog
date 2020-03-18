@@ -191,8 +191,8 @@ def obtener_post():
             'app\\static\\uploads\\{}'.format(nombre_imagen))
         ruta_html = '../static/uploads/{}'.format(nombre_imagen)
         imagen.save(ruta_imagen)
-        print('=== He guardado la imagen ===')
         if imagen.filename != '':
+            print('=== Estoy validando la imagen ===')
             imagen = Image.open(ruta_imagen)
             if imagen.width > 1980 and imagen.height > 1080:
                 reducirTamaño_imagen = imagen.resize((1980, 1080))
