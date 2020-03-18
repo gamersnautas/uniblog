@@ -198,11 +198,12 @@ def obtener_post():
                 reducirTamaño_imagen = imagen.resize((1980, 1080))
                 reducirTamaño_imagen.save(ruta_imagen, optimize=True) 
                 post.post_imagen = ruta_html
-            else:   
+            else:
+                tamaño_imagen = os.path.getsize(ruta_imagen)*0.000001
+                print(tamaño_imagen)   
                 imagen.save(ruta_imagen, optimize=True)
                 post.post_imagen = ruta_html
-        else:
-            pass
+
         bdd.session.add(post)
         bdd.session.commit()
     return "Success"
